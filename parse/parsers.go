@@ -3,7 +3,7 @@ package parse
 import (
 	"iter"
 
-	"github.com/illbjorn/hades/simcg/tokenize"
+	"github.com/illbjorn/simcg/tokenize"
 )
 
 type (

@@ -8,9 +8,9 @@ import (
 
 	"github.com/illbjorn/echo"
 
-	"github.com/illbjorn/hades/simcg/build"
-	"github.com/illbjorn/hades/simcg/parse"
-	"github.com/illbjorn/hades/simcg/tokenize"
+	"github.com/illbjorn/simcg/build"
+	"github.com/illbjorn/simcg/parse"
+	"github.com/illbjorn/simcg/tokenize"
 )
 
 func main() {

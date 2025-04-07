@@ -8,7 +8,7 @@ import (
 
 	"github.com/illbjorn/echo"
 
-	"github.com/illbjorn/hades/simcg/parse"
+	"github.com/illbjorn/simcg/parse"
 )
 
 /*------------------------------------------------------------------------------

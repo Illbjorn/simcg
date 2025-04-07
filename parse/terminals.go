@@ -3,7 +3,7 @@ package parse
 import (
 	"slices"
 
-	"github.com/illbjorn/hades/simcg/tokenize"
+	"github.com/illbjorn/simcg/tokenize"
 )
 
 func Terminal(kind Kind, kinds ...tokenize.Kind) Combinator {

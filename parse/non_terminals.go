@@ -1,7 +1,7 @@
 package parse
 
 import (
-	"github.com/illbjorn/hades/simcg/tokenize"
+	"github.com/illbjorn/simcg/tokenize"
 )
 
 func Seq(kind Kind, parsers ...Combinator) Combinator {

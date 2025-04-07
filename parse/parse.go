@@ -3,7 +3,7 @@ package parse
 import (
 	"github.com/illbjorn/echo"
 
-	"github.com/illbjorn/hades/simcg/tokenize"
+	"github.com/illbjorn/simcg/tokenize"
 )
 
 func Parse(set *tokenize.Set) *Node {

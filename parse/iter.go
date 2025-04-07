@@ -1,7 +1,7 @@
 package parse
 
 import (
-	"github.com/illbjorn/hades/simcg/tokenize"
+	"github.com/illbjorn/simcg/tokenize"
 )
 
 func join(set *tokenize.Set, parsers ...Combinator) NodeProducer {

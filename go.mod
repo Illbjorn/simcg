@@ -1,4 +1,4 @@
-module github.com/illbjorn/hades/simcg
+module github.com/illbjorn/simcg
 
 go 1.24.0
 

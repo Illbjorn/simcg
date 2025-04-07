@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/illbjorn/hades/simcg/parse"
+	"github.com/illbjorn/simcg/parse"
 )
 
 func Build(root *parse.Node) *APL {
