@@ -1,0 +1,159 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+################################################################################
+#                                                                              #
+#                            GENERATED. DO NOT EDIT.                           #
+#                                                                              #
+################################################################################
+
+version: '3'
+
+interval: 250ms
+
+tasks:
+  gen-build-base-value:
+    sources: ['./build/base_value.go']
+    generates: ['./build/zz_base_value_kind_string.go']
+    cmd: go generate "./build/base_value.go"
+
+  gen-build-buff:
+    sources: ['./build/buff.go']
+    generates: ['./build/zz_buff_cmd_string.go']
+    cmd: go generate "./build/buff.go"
+
+  gen-build-builtin:
+    sources: ['./build/builtin.go']
+    generates: ['./build/zz_builtin_cmd_string.go']
+    cmd: go generate "./build/builtin.go"
+
+  gen-build-casting:
+    sources: ['./build/casting.go']
+    generates: ['./build/zz_casting_cmd_string.go']
+    cmd: go generate "./build/casting.go"
+
+  gen-build-command:
+    sources: ['./build/command.go']
+    generates: ['./build/zz_command_kind_string.go']
+    cmd: go generate "./build/command.go"
+
+  gen-build-commands:
+    sources: ['./build/commands.go']
+    generates: ['./build/zz_self_cmd_string.go']
+    cmd: go generate "./build/commands.go"
+
+  gen-build-cooldown:
+    sources: ['./build/cooldown.go']
+    generates: ['./build/zz_cooldown_cmd_string.go']
+    cmd: go generate "./build/cooldown.go"
+
+  gen-build-debuff:
+    sources: ['./build/debuff.go']
+    generates: ['./build/zz_debuff_cmd_string.go']
+    cmd: go generate "./build/debuff.go"
+
+  gen-build-dot:
+    sources: ['./build/dot.go']
+    generates: ['./build/zz_dot_cmd_string.go']
+    cmd: go generate "./build/dot.go"
+
+  gen-build-equipped:
+    sources: ['./build/equipped.go']
+    generates: ['./build/zz_equipped_cmd_string.go']
+    cmd: go generate "./build/equipped.go"
+
+  gen-build-gcd:
+    sources: ['./build/gcd.go']
+    generates: ['./build/zz_gcd_cmd_string.go']
+    cmd: go generate "./build/gcd.go"
+
+  gen-build-instruction:
+    sources: ['./build/instruction.go']
+    generates: ['./build/zz_instruction_kind_string.go']
+    cmd: go generate "./build/instruction.go"
+
+  gen-build-movement:
+    sources: ['./build/movement.go']
+    generates: ['./build/zz_movement_cmd_string.go']
+    cmd: go generate "./build/movement.go"
+
+  gen-build-race:
+    sources: ['./build/race.go']
+    generates: ['./build/zz_race_cmd_string.go']
+    cmd: go generate "./build/race.go"
+
+  gen-build-raid-event:
+    sources: ['./build/raid_event.go']
+    generates: ['./build/zz_raid_event_cmd_string.go','./build/zz_raid_event_filter_cmd_string.go']
+    cmd: go generate "./build/raid_event.go"
+
+  gen-build-resource:
+    sources: ['./build/resource.go']
+    generates: ['./build/zz_resource_string.go','./build/zz_resource_cmd_string.go']
+    cmd: go generate "./build/resource.go"
+
+  gen-build-role:
+    sources: ['./build/role.go']
+    generates: ['./build/zz_role_cmd_string.go']
+    cmd: go generate "./build/role.go"
+
+  gen-build-spec:
+    sources: ['./build/spec.go']
+    generates: ['./build/zz_spec_cmd_string.go']
+    cmd: go generate "./build/spec.go"
+
+  gen-build-swing:
+    sources: ['./build/swing.go']
+    generates: ['./build/zz_swing_cmd_string.go']
+    cmd: go generate "./build/swing.go"
+
+  gen-build-talent:
+    sources: ['./build/talent.go']
+    generates: ['./build/zz_talent_cmd_string.go']
+    cmd: go generate "./build/talent.go"
+
+  gen-build-target:
+    sources: ['./build/target.go']
+    generates: ['./build/zz_target_cmd_string.go','./build/zz_target_filter_cmd_string.go']
+    cmd: go generate "./build/target.go"
+
+  gen-build-trinket:
+    sources: ['./build/trinket.go']
+    generates: ['./build/zz_trinket_slot_string.go','./build/zz_trinket_cmd_string.go']
+    cmd: go generate "./build/trinket.go"
+
+  gen-parse-kind:
+    sources: ['./parse/kind.go']
+    generates: ['./parse/kind_string.go']
+    cmd: go generate "./parse/kind.go"
+
+  gen-tokenize-kind:
+    sources: ['./tokenize/kind.go']
+    generates: ['./tokenize/kind_string.go']
+    cmd: go generate "./tokenize/kind.go"
+
+  all:
+    cmds:
+      - task: gen-build-base-value
+      - task: gen-build-buff
+      - task: gen-build-builtin
+      - task: gen-build-casting
+      - task: gen-build-command
+      - task: gen-build-commands
+      - task: gen-build-cooldown
+      - task: gen-build-debuff
+      - task: gen-build-dot
+      - task: gen-build-equipped
+      - task: gen-build-gcd
+      - task: gen-build-instruction
+      - task: gen-build-movement
+      - task: gen-build-race
+      - task: gen-build-raid-event
+      - task: gen-build-resource
+      - task: gen-build-role
+      - task: gen-build-spec
+      - task: gen-build-swing
+      - task: gen-build-talent
+      - task: gen-build-target
+      - task: gen-build-trinket
+      - task: gen-parse-kind
+      - task: gen-tokenize-kind

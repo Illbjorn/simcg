@@ -1,0 +1,12 @@
+# Proof of Concept // Simc Profiles
+*.s2
+
+# Grammar Tooling Output
+.antlr
+
+# Task Runner Output
+.task
+
+# Editor Directories
+.vscode
+.idea

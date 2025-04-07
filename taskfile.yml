@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: '3'
+
+interval: 250ms
+
+includes:
+  gen:
+    taskfile: taskfile.gen.yml
+    flatten: true
+    optional: true
+
+tasks:
+  dev: &dev
+    aliases: [d]
+    cmds:
+      - cmd: clear
+      - task: gen:all
+      - cmd: clear
+      - cmd: go run . -i example.simc
+
+  devw:
+    <<: *dev
+    aliases: [dw]
+    sources: ['**/*.go']
+    watch: true
+
+  # Regenerates the taskfile.gen.yml file
+  regen:
+    cmd: root='.' .github/scripts/gen.sh
