@@ -10,10 +10,10 @@ import (
 
 func init() {
 	echo.SetFlags(
-		echo.WITH_CALLER_FILE,
-		echo.WITH_CALLER_LINE,
-		echo.WITH_LEVEL,
-		echo.WITH_COLOR,
+		echo.WithCallerFile,
+		echo.WithCallerLine,
+		echo.WithLevel,
+		echo.WithColor,
 	)
 }
 

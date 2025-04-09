@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	echo.SetFlags(echo.WITH_CALLER_FILE, echo.WITH_CALLER_LINE)
+	echo.SetFlags(echo.WithCallerFile, echo.WithCallerLine)
 	echo.SetLevel(echo.LevelWarn)
 
 	args := ParseArgs()
